@@ -1,0 +1,392 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:
+}
+
+
+body{
+
+    font-family:"ubuntu", sans-serif;
+}
+
+:root{
+
+    --main-color: #0f2f44;
+    --yellow: #ffc712;
+    --first-font: "Ubuntu", sans-serif;
+    --second-font: "Open sans", sans-serif;
+    --third-font: "Abril Fatface", cursive;
+}
+
+ul{
+
+    list-style-type:none;
+}
+
+a{
+
+    text-decoration:none;
+}
+
+
+.container{
+
+    width:1170px;
+    margin:auto;
+}
+
+.row{
+
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.btn{
+
+    padding: 16px 21px;
+    background-color: var(--yellow);
+    display: inline-block;
+    font-weight: 500px;
+    font-size: 20px;
+    color: var(--main-color);
+    border-radius: 5px;
+
+}
+
+.heading *:first-child{
+
+    color: var(--main-color);
+    font-size: 14px;
+    font-weight: 300px;
+
+}
+
+.heading *:last-child{
+
+    color: var(--main-color);
+    font-weight:400px;
+    font-size: 32px;
+    font-family: var(--third-font);
+
+}
+
+.align{
+
+    align-items: center;
+}
+
+
+ /*common css ends*/
+
+
+
+ /*header section start*/
+
+
+ header{
+
+    background-color: var(--main-color);
+    color:#fff;
+    padding: 18px 0;
+
+ }
+
+header .welcome,
+header .opening{
+
+    width:50%;
+}
+
+header .opening{
+
+    text-align: right;
+}
+
+/*header end*/
+
+/*nav start*/
+
+nav .logo{
+
+    width:40%;
+
+}
+
+
+nav .menu{
+
+    width:60%;
+    
+}
+
+nav .menu ul{
+
+
+    text-align: right;
+}
+
+
+nav .menu ul li{
+
+    display: inline-block;
+    position: relative;
+}
+
+
+nav .menu ul li a{
+
+    padding:40px 12px;
+    display:block;
+    color:#222;
+    font-weight:500;
+    transition:0.10s;
+}
+
+
+nav .menu ul li ul{
+
+    position:absolute; 
+    left:0;
+    width:200px;
+    text-align: left;
+    opacity: 0;
+    visibility: hidden;
+    margin-top: 20px;
+    transition: 0.30s;
+
+}
+
+
+nav .menu ul li:hover ul{
+
+    opacity: 1;
+    visibility: visible;
+    margin-top: 0;
+}
+
+nav .menu ul li ul li{
+
+    display:block;
+}
+
+nav .menu ul li ul li a{
+
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+
+
+nav .menu ul li:hover > a{
+
+    color: var(--yellow);
+    background-color:#fff9e6;
+}
+
+
+
+nav .menu ul li a span{
+
+    display: inline-block;
+    transition: 0.40s;
+}
+
+nav .menu ul li:hover a span{
+
+    transform: rotate(-180deg);
+}
+
+
+nav .menu ul li:last-child span{
+
+    width:35px;
+    height:35px;
+    display:block;
+    border-radius:50%;
+    line-height:35px;
+    border: 1px solid #dfdfdf;
+    text-align: center;
+    color: #999;
+}
+
+
+/*nav end*/
+
+
+/*banner start*/
+
+
+#banner{
+
+    background-image: url(../image/banner.png);
+    background-color: #e0eeff;
+    height:600px;
+    background-repeat: no-repeat;
+   /* background-size: 50% 50%; */
+    background-position: 80% bottom;
+}
+
+
+#banner .banner_text{
+
+    width:40%;
+}
+
+#banner .row{
+
+    height: 600px;
+}
+
+
+#banner .banner_text h3{
+
+    font-size:50px;
+    font-weight:300;
+    color: var(--main-color);
+}
+
+#banner .banner_text h2{
+
+    font-size:80px;
+    font-weight:400;
+    color: var(--maincolor);
+    font-family: var(--third-font);
+    margin-top: -20px;
+    
+}
+
+#banner .banner_text h4{
+
+    font-size: 32px;
+    font-weight:400;
+    color:#8484bf;
+    letter-spacing: 13px;
+}
+
+#banner .banner_text p{
+
+    font-size:14px;
+    font-weight:400;
+    font-family: var(--second-font);
+    line-height:23px;
+    margin: 28px 0;
+    color:#444;
+    
+}
+
+#banner .btn{
+
+    background-color: #8484bf;
+    color:#fff;
+}
+
+#banner .player{
+
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 25px;
+    text-align: center;
+    background-color: #fff;
+    display:inline-block;
+    color:#8484bf;
+    margin: 0 8px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/*banner end*/
+
+
+/*our section start*/
+
+
+
+#our .our_text{
+
+    margin: 80px 0;
+    width:55%;
+}
+
+
+#our .heading{
+
+    margin-bottom:27px;
+}
+
+#our .ptag p{
+
+    color:#6c7882;
+    font-size:14px;
+    font-weight:300;
+    font-family: var(--second-font);
+    margin: 21px 0;
+    line-height:23px;
+    
+}
+
+#our .later{
+
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-left: 15px;
+
+    
+}
+
+#our .pic{
+
+    width:45%;
+    margin-top:80px;
+    padding: 25px;
+}
+
+
+#our .skill_pic{
+
+    width:45px;
+    margin:60px 0;
+}
+
+/*our section end*/
+
+
+
+/*skill section start*/
+
+
+#skills{
+
+    margin: 60px; 0;
+}
+
+#skills .skill_pics{
+
+    width:50%;
+    margin: 50px 0;
+}
+
+#skills .skill_text img{
+
+    width:100%;
+    display:block;
+    margin-left:50px;
+    
+}
+
+#skills .skill_text{
+
+    width:50%;
+    margin:60px 0;
+    text-align:right;
+}
+
+#skills .skill_pics img{
+
+    width:100%;
+    display:inline-block;
+    
+    
+    
+}
